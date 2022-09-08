@@ -1,0 +1,125 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Homemade Sausage';
+    src: url(./fonts/Homemade\ Sausage.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: white;
+    --cor2: #d69d52;
+    --cor3: #ac6726;;
+    --cor4: #462c24;
+    --cor5: #A52A2A;
+}
+
+
+body {
+    background-image: url(./images/background_coffee-beans7.png);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-color: #462c24;
+    font-family:'Lucida Sans', Verdana, sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Homemade Sausage';
+}
+
+h1 {
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    margin-top: -1em;;
+    font-style: italic;
+    font-size: 1.8em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+form {
+    max-width: 600px;
+    min-width: 100px;
+    margin: 2em auto 0 auto;
+    padding: 2em;
+    background-color: #d69d52e7;
+    border-radius: 1em;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.747);
+}
+
+p#description {
+    max-width: 600px;
+    min-width: 100px;
+    margin: 0 auto 2em auto;
+    font-family: 'Homemade Sausage';
+    font-size: 1.4em;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 2em;
+    border-bottom: 4px solid #A52A2A;
+}
+
+label {
+    display: block;
+    margin-bottom: 2em;
+    color: black;
+}
+
+input, select, textarea {
+    width: 99%;
+    margin: 0.5em 0;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border-radius: 0.2em;
+}
+
+input, select {
+    min-height: 2em;
+}
+
+textarea {
+    min-height: 12em;
+    resize: vertical;
+}
+
+p#radio {
+    padding-bottom: 0.5em;
+    text-align: left;
+}
+
+.inline {
+    width: unset;
+    margin: 0 1em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4em;
+    border: 1px solid white;
+    background-color: #ac6726;
+    border-radius: 0.5em;
+}
+
+input[type="submit"]:hover {
+    background-color: #61a164;
+    transition: 0.2s;
+}
