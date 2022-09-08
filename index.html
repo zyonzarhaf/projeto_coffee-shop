@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>CoffeeShop</h1>
+        <h2>Est. 1996</h2>
+    </header>
+    <form id="survey-form">
+            <p id="description">Gosta do nosso cafezinho? Ajude-nos a melhorar ainda mais preenchendo este formulário!</p>
+        <fieldset>
+            <label for="nome-completo"> Digite seu Nome Completo:
+                <input id="nome-completo" name="nome-completo" type="text" required>
+            </label>
+            <label for="email"> Digite seu Email:
+                <input id="email" name="email" type="email" required>
+            </label>
+            <label for="idade"> Idade (opcional)
+                <input id="idade" name="idade" type="number" min="13" max="120">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="bebida-favorita"> Qual dos nossos tipos de café é o seu predileto?
+                <select id="bebida-favorita" name="bebida-favorita">
+                    <option value="">Selecione um</option>
+                    <option value="1">Espresso</option>
+                    <option value="2">Café Curto</option>
+                    <option value="3">Ristretto</option>
+                    <option value="4">Espresso Italiano</option>
+                    <option value="5">Café Carioca</option>
+                    <option value="6">Café Longo</option>
+                    <option value="7">Café Filtrado</option>
+                    <option value="">--------------------------</option>
+                    <option value="8">Café com Leite</option>
+                    <option value="9">Mocha</option>
+                    <option value="10">Capuccino Italiano</option>
+                    <option value="11">Capuccino</option>
+                    <option value="12">Pingado</option>
+                    <option value="13">Café Cortado</option>
+                    <option value="14">Macchiato</option>
+                </select>
+            </label>
+            <p id="radio">Você recomendaria nossos serviços e produtos para outras pessoas?</p>
+            <label for="sim"><input id="sim" name="recomendação" type="radio" class="inline">Sim</label>
+            <label for="não"><input id="não" name="recomendação" type="radio" class="inline">Não</label>
+            <label for="comentario">Conte-nos três coisas que você mais gosta em nossa cafeteria:
+                <textarea id="comentario" name="comentario" rows="3" cols="30"
+                    placeholder="Eu gosto de..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
