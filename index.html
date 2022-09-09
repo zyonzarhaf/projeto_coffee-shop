@@ -10,25 +10,25 @@
 
 <body>
     <header>
-        <h1>Coffee Shop</h1>
+        <h1 id="title">Coffee Shop</h1>
         <h2>Est. 1996</h2>
     </header>
     <form id="survey-form">
             <p id="description">Gosta do nosso cafezinho? Ajude-nos a melhorar ainda mais preenchendo este formulário!</p>
         <fieldset>
-            <label for="nome-completo"> Digite seu Nome Completo:
-                <input id="nome-completo" name="nome-completo" type="text" required>
+            <label id="name-label" for="name"> Digite seu Nome Completo:
+                <input id="name" name="name" type="text" placeholder="Ex: Prenome Sobrenome" required>
             </label>
-            <label for="email"> Digite seu Email:
-                <input id="email" name="email" type="email" required>
+            <label id="email-label" for="email"> Digite seu Email:
+                <input id="email" name="email" type="email" placeholder="Ex: email@mail.com" required>
             </label>
-            <label for="idade"> Idade (opcional)
-                <input id="idade" name="idade" type="number" min="13" max="120">
+            <label id="number-label" for="number"> Idade (opcional)
+                <input id="number" name="age" type="number" min="13" max="120" placeholder="Ex: 18">
             </label>
         </fieldset>
         <fieldset>
-            <label for="bebida-favorita"> Qual dos nossos tipos de café é o seu predileto?
-                <select id="bebida-favorita" name="bebida-favorita">
+            <label for="dropdown"> Qual dos nossos tipos de café é o seu predileto?
+                <select id="dropdown" name="favdrinks">
                     <option value="">Selecione um</option>
                     <option value="1">Espresso</option>
                     <option value="2">Café Curto</option>
@@ -48,14 +48,27 @@
                 </select>
             </label>
             <p id="radio">Você recomendaria nossos serviços e produtos para outras pessoas?</p>
-            <label for="sim"><input id="sim" name="recomendação" type="radio" class="inline">Sim</label>
-            <label for="não"><input id="não" name="recomendação" type="radio" class="inline">Não</label>
-            <label for="comentario">Conte-nos três coisas que você mais gosta em nossa cafeteria:
-                <textarea id="comentario" name="comentario" rows="3" cols="30"
+            <label for="yes"><input id="yes" name="usrrecommend" type="radio" value="1" class="inline">Sim</label>
+            <label for="no"><input id="no" name="usrrecommend" type="radio" value="2"  class="inline">Não</label>
+            <p id="checkbox">No que você gostaria que melhorássemos?</p>
+            <label>
+                <input class="inline" type="checkbox" value="1">Cardápio
+            </label>
+            <label>
+                <input class="inline" type="checkbox" value="2">Atendimento
+            </label>
+            <label>
+                <input class="inline" type="checkbox" value="3">Espaço físico
+            </label>
+            <label>
+                <input class="inline" type="checkbox" value="4">Loja virtual
+            </label>
+            <label for="textarea">Conte-nos três coisas que você mais gosta em nossa cafeteria:
+                <textarea id="textarea" name="comment" rows="3" cols="30"
                     placeholder="Eu gosto de..."></textarea>
             </label>
         </fieldset>
-        <input type="submit" value="Enviar">
+        <input id="submit" type="submit" value="Enviar">
     </form>
 </body>
 

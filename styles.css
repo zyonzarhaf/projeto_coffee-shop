@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: 'Homemade Sausage';
-    src: url(./fonts/Homemade\ Sausage.ttf);
+    src: url(./fonts/homemade-sausage.ttf);
 }
 
 * {
@@ -28,26 +28,25 @@ body {
     background-repeat: no-repeat;
 }
 
-h1, h2 {
+h1#title, h2 {
     text-align: center;
     font-family: 'Homemade Sausage';
 }
 
-h1 {
+h1#title {
     margin-top: 0.5em;
-    font-size: 4.5em;
-    line-height: 1em;
+    font-size: 5em;
     color: rgba(0, 0, 0, 0.7);
 }
 
 h2 {
-    margin-top: 1em;
+    margin-top: -1em;;
     font-style: italic;
     font-size: 1.4em;
     color: rgba(255, 255, 255, 0.7);
 }
 
-form {
+form#survey-form {
     max-width: 600px;
     min-width: 100px;
     margin: 2em auto;
@@ -97,7 +96,7 @@ textarea {
     resize: vertical;
 }
 
-p#radio {
+p#radio, p#checkbox {
     padding-bottom: 0.5em;
     text-align: left;
 }
