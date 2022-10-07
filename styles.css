@@ -11,14 +11,17 @@
 
 :root {
     --cor1: white;
-    --cor2: #d69d52;
-    --cor3: #ac6726;;
+    --cor2: #eea13de7;
+    --cor3: #ac6726;
     --cor4: #462c24;
     --cor5: #A52A2A;
 }
 
 
 body {
+    min-height: 100vh;
+    width: 100%;
+
     background-color: #000000;
     font-family:'Lucida Sans', Verdana, sans-serif;
     background-image: url(./images/background_coffee-beans7.png);
@@ -33,10 +36,11 @@ h1#title, h2 {
     font-family: 'Homemade Sausage';
 }
 
+@media screen and (min-width: 530px) {
 h1#title {
     margin-top: 0.5em;
-    font-size: 5em;
-    color: rgba(0, 0, 0, 0.7);
+    font-size: 6em;
+    color: rgba(0, 0, 0, 0.8);
 }
 
 h2 {
@@ -45,26 +49,56 @@ h2 {
     font-size: 1.4em;
     color: rgba(255, 255, 255, 0.7);
 }
+}
+
+@media screen and (max-width: 530px) {
+    h1#title {
+        margin-top: 0.5em;
+        font-size: 4em;
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    h2 {
+        margin-top: -1em;;
+        font-style: italic;
+        font-size: 1em;
+        color: rgba(255, 255, 255, 0.7);
+    }
+    }
 
 form#survey-form {
+    width: 72%;
     max-width: 600px;
-    min-width: 100px;
     margin: 2em auto;
     padding: 2em;
-    background-color: #d69d52e7;
+    background-color: #eea13de7;
     border-radius: 1em;
     box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.747);
 }
 
+@media screen and (min-width: 530px) {
 p#description {
     max-width: 600px;
     min-width: 100px;
     margin: 0 auto 2em auto;
     font-family: 'Homemade Sausage';
     font-size: 1.4em;
-    text-align: left;
+    text-align: justify;
     color: rgba(0, 0, 0, 0.76);
 }
+}
+
+@media screen and (max-width: 530px) {
+    p#description {
+        max-width: 600px;
+        min-width: 100px;
+        margin: 0 auto 2em auto;
+        font-family: 'Homemade Sausage';
+        font-size: 1.2em;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.76);
+    }
+    }
 
 fieldset {
     border: none;
@@ -121,4 +155,5 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #61a164;
     transition: 0.2s;
+    cursor: pointer;
 }
